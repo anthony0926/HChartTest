@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8U7-2I-7g7">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ipD-ta-8A0">
+            <objects>
+                <viewController id="8U7-2I-7g7" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yTO-HR-kmz"/>
+                        <viewControllerLayoutGuide type="bottom" id="iIz-AG-GFB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fra-kA-L35">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NxT-65-4c6" customClass="HorizontalBarChartView" customModule="HCharts">
+                                <rect key="frame" x="20" y="28" width="552" height="552"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NxT-65-4c6" firstAttribute="leading" secondItem="fra-kA-L35" secondAttribute="leading" constant="20" id="28x-ID-SfP"/>
+                            <constraint firstAttribute="trailing" secondItem="NxT-65-4c6" secondAttribute="trailing" constant="28" id="Fx1-g7-z8o"/>
+                            <constraint firstItem="NxT-65-4c6" firstAttribute="top" secondItem="yTO-HR-kmz" secondAttribute="bottom" constant="8" id="ZMs-03-Ldt"/>
+                            <constraint firstItem="iIz-AG-GFB" firstAttribute="top" secondItem="NxT-65-4c6" secondAttribute="bottom" constant="20" id="upN-7L-yGQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="NxT-65-4c6" id="ftb-wY-qin"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="39y-sv-b2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-479" y="754"/>
+        </scene>
+    </scenes>
+</document>
